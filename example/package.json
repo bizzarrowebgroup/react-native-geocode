@@ -1,20 +1,18 @@
 {
-  "name": "react-native-geocode-example",
-  "description": "Example app for react-native-geocode",
+  "name": "Geocode-example",
   "version": "0.0.1",
+  "description": "Test the React-native-geocode library",
+  "author": "BIZZARROWEBGROUP <admin@bizzarro.org> (https://github.com/bizzarrowebgroup)",
+  "license": "MIT",
   "private": true,
-  "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start"
+  "main": "node_modules/expo/AppEntry.js",
+  "devDependencies": {
+    "babel-preset-expo": "^7.0.0"
   },
   "dependencies": {
+    "expo": "^37.0.0",
     "react": "16.9.0",
-    "react-native": "0.61.5"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/runtime": "^7.8.4",
-    "metro-react-native-babel-preset": "^0.58.0"
+    "react-native": "https://github.com/expo/react-native/archive/sdk-37.0.1.tar.gz",
+    "react-native-geocode": "0.1.0"
   }
 }

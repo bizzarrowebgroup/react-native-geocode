@@ -1,4 +1,28 @@
 {
-  "name": "GeocodeExample",
-  "displayName": "Geocode Example"
+  "expo": {
+    "name": "Geocode-example",
+    "description": "Test the React-native-geocode library",
+    "slug": "geocode-example",
+    "privacy": "unlisted",
+    "sdkVersion": "37.0.0",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "primaryColor": "#cccccc",
+    "icon": "../assets/app-icon.png",
+    "loading": {
+      "icon": "../assets/loading-icon.png",
+      "hideExponentText": false
+    },
+    "packagerOpts": {
+      "assetExts": [
+        "ttf",
+        "mp4",
+        "otf",
+        "xml"
+      ]
+    },
+    "ios": {
+      "supportsTablet": true
+    }
+  }
 }
