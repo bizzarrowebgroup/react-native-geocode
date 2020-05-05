@@ -26,25 +26,25 @@ Geocode.from("Colosseum").then(json => {
 }).catch(error => console.warn(error));
 
 // Geocode from location
-Geocoder.from(41.89, 12.49).then(json => {
+Geocode.from(41.89, 12.49).then(json => {
     var addressComponent = json.results[0].address_components[0];
     console.log(addressComponent);
 }).catch(error => console.warn(error));
 
 // Geocode from latitude
-Geocoder.from({
+Geocode.from({
 	latitude : 41.89,
 	longitude : 12.49
 });
 
 // Geocode from latlng object
-Geocoder.from({
+Geocode.from({
 	lat : 41.89,
 	lng : 12.49
 });
 
 // Geocode from array
-Geocoder.from([41.89, 12.49]);
+Geocode.from([41.89, 12.49]);
 ```
 
 ## License
