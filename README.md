@@ -44,7 +44,7 @@ Geocode.intialize("GMAPS-API-KEY", {language : "en"});
 
 ### Others examples (See also the example folder)
 
-```
+```js
 // Geocode
 Geocode.from("Colosseum").then(json => {
     var location = json.results[0].geometry.location;
