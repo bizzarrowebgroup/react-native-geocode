@@ -1,6 +1,6 @@
 {
   "name": "react-native-geocode",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "transform a description of a location into geographic coordinates",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
