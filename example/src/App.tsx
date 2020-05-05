@@ -1,17 +1,16 @@
-import * as React from 'react';
+import React, { useEffect } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import Geocode from 'react-native-geocode';
 
 export default function App() {
-  const [deviceName, setDeviceName] = React.useState('');
-
-  React.useEffect(() => {
-    Geocode.getDeviceName().then(setDeviceName);
+  useEffect(() => {
+    // eslint-disable-next-line prettier/prettier
+    Geocode.init("apikey", { language: "en" });
   }, []);
 
   return (
     <View style={styles.container}>
-      <Text>Device name: {deviceName}</Text>
+      <Text>Geocode Examples</Text>
     </View>
   );
 }

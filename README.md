@@ -21,3 +21,9 @@ const deviceName = await Geocode.getDeviceName();
 ## License
 
 MIT
+## Release Note
+
+
+### 0.1.0
+
+- Initial release
