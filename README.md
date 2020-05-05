@@ -5,7 +5,7 @@ transform a description of a location into geographic coordinates
 ## Installation
 
 ```sh
-npm install react-native-geocode
+yarn add react-native-geocode
 ```
 
 ## Usage
@@ -50,8 +50,8 @@ Geocode.from([41.89, 12.49]);
 ## License
 
 MIT
-## Release Note
 
+## Release Note
 
 ### 0.1.0
 
