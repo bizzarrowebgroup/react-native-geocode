@@ -1,5 +1,9 @@
 # react-native-geocode
 
+[![runs with expo](https://img.shields.io/badge/Runs%20with%20Expo-000.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.io/)
+![issues tracker](https://img.shields.io/github/issues/bizzarrowebgroup/react-native-geocode)
+![license](https://img.shields.io/github/license/bizzarrowebgroup/react-native-geocode)
+
 transform a description of a location into geographic coordinates
 
 ## Installation
