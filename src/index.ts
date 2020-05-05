@@ -13,7 +13,7 @@ export default Geocode = {
 	 * @param {Object} [options] extra options for your geocoding request.
 	 * @see https://developers.google.com/maps/documentation/geocoding/intro#geocoding
 	 */
-    init(apiKey, options = {}) {
+    intialize(apiKey, options = {}) {
         this.apiKey = apiKey;
         this.options = options;
     },
@@ -21,7 +21,7 @@ export default Geocode = {
 	/**
 	 * @returns {boolean} True if the module has been initiated. False otherwise.
 	 */
-    get isInit() {
+    get isIntialized() {
         return !!this.apiKey;
     },
 
@@ -40,7 +40,7 @@ export default Geocode = {
 	 */
     async from(...params) {
         // check api key
-        if (!Geocode.isInit)
+        if (!Geocode.isIntialized)
             throw {
                 code: Geocode.Errors.NOT_INITIATED,
                 message: "Geocode isn't initialized. Call Geocode.init function (only once), passing it your app's api key as parameter.",
@@ -119,7 +119,7 @@ export default Geocode = {
 	 */
     Errors: {
 		/**
-		 * Module hasn't been initiated. Call {@link Geocode.init}.
+		 * Module hasn't been initiated. Call {@link Geocode.intialize}.
 		 */
         NOT_INITIATED: 0,
 

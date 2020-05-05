@@ -14,10 +14,10 @@ npm install react-native-geocode
 import Geocode from "react-native-geocode";
 
 // Intialize Gecodoer
-Geocode.init("GMAPS-API-KEY");
+Geocode.intialize("GMAPS-API-KEY");
 
 // Or with options 
-Geocode.init("GMAPS-API-KEY", {language : "en"});
+Geocode.intialize("GMAPS-API-KEY", {language : "en"});
 
 // Geocode
 Geocode.from("Colosseum").then(json => {
