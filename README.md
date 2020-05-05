@@ -14,15 +14,37 @@ yarn add react-native-geocode
 
 ## Usage
 
+# Initialize the Geocode library with
+
 ```js
 import Geocode from "react-native-geocode";
+...
 
-// Intialize Gecodoer
 Geocode.intialize("GMAPS-API-KEY");
-
-// Or with options 
+// or with options
 Geocode.intialize("GMAPS-API-KEY", {language : "en"});
+```
 
+| Accepted props | Type   | Description            |
+|----------------|--------|------------------------|
+| apiKey         | String | Google Maps Apikey     |
+| options        | Object | Google Geocode Options |
+
+[for options props see](https://developers.google.com/maps/documentation/geocoding/intro#geocoding)
+
+# You can call the from function with these parameters
+
+| Accepted parameter    | Type    |
+|-----------------------|---------|
+| Address               | String  |
+| {lat, lng}            | Object  |
+| {latitude, longitude} | Object  |
+| [latitude, longitude] | Array   |
+| (latitude, longitude) | Numbers |
+
+### Others examples (See also the example folder)
+
+```
 // Geocode
 Geocode.from("Colosseum").then(json => {
     var location = json.results[0].geometry.location;
